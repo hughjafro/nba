@@ -1,9 +1,30 @@
+<div id="indexcontainer">
 <h1>List of NBA teams</h1>
 
-<!-- embedding Ruby; use <%= %> if you want to see the output on the screen -->
-<% @teams.each do |team| %>
-	<%= team.city %>
-	<%= team.name %>
-	
+<table>
+  <tr>
+    <th>City</th>
+    <th>Nickname</th>
+    <th>Point Guard</th>
+    <th>Shooting Guard</th>
+    <th>Small Forward</th>
+    <th>Power Forward</th>
+    <th>Center</th>
+    <th></th>
 
+  </tr>
+	<!-- embedding Ruby; use <%= %> if you want to see the output on the screen -->
+	<% @teams.each do |team| %>
+	<tr>
+		<td><%= team.city %></td>
+		<td><%= team.name %></td>
+		<td><%= team.pg %></td>
+		<td><%= team.sg %></td>
+		<td><%= team.sf %></td>
+		<td><%= team.pf %></td>
+		<td><%= team.ctr %></td>
+		<td><%= button_to "Delete", { action: "destroy", id: team.id}, {method: :delete, data: {confirm: "Are you sure???"}, :class => "mybutton"} %></td> <!-- if the : is before the word we need :action => "destroy" -->
+	</tr>
 <% end %>
+</table>
+</div>

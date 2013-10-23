@@ -10,7 +10,7 @@
 Team.destroy_all
 
 Team.create([
-	{name: 'Lakers', city: 'Los Angeles'},
+	{name: 'Lakers', city: 'Los Angeles', pg: 'Steve Nash', sg: 'Kobe Bryant', sf: 'Nick Young', pf: 'Chris Kaman', ctr: 'Pau Gasol'},
 	{name: 'Clippers', city: 'Los Angeles'},
 	{name: 'Warriors', city: 'Golden State'}
 	])

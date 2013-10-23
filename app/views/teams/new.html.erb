@@ -1,0 +1,46 @@
+<div id="newcontainer">
+	<h1>Enter a new NBA team.</h1>
+
+<%= form_for @team do |team| %>
+
+<p>
+	<%= team.label :city, "City"%>
+	<%= team.text_field :city %>
+</p>
+
+<p>
+	<%= team.label :name, "Nickname"%>
+	<%= team.text_field :name %>
+</p>
+
+<p>
+	<%= team.label :pg, "Point Guard"%>
+	<%= team.text_field :pg %>
+</p>
+
+<p>
+	<%= team.label :sg, "Shooting Guard"%>
+	<%= team.text_field :sg %>
+</p>
+
+<p>
+	<%= team.label :sf, "Small Forward"%>
+	<%= team.text_field :sf %>
+</p>
+
+<p>
+	<%= team.label :pf, "Power Forward"%>
+	<%= team.text_field :pf %>
+</p>
+
+<p>
+	<%= team.label :ctr, "Center"%>
+	<%= team.text_field :ctr %>
+</p>
+
+<p>
+	<%= team.submit %>
+</p>
+
+<%end%>
+</div>
