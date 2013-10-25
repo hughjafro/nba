@@ -14,3 +14,10 @@ Team.create([
 	{name: 'Clippers', city: 'Los Angeles'},
 	{name: 'Warriors', city: 'Golden State'}
 	])
+
+# User.destroy_all
+
+# User.create([
+	
+
+	])
